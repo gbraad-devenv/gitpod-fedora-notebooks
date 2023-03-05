@@ -1,21 +1,10 @@
 image:
-  file: .gitpod.Dockerfile
-
-experimentalNetwork: true
+  file: Containerfile
 
 tasks:
-  - name: tailscaled
-    command: |
-      sudo tailscaled
-  - name: tailscale
-    command: |
-      sudo -E tailscale up --hostname "gitpod-${GITPOD_WORKSPACE_ID}" \
-                           --authkey "${TAILSCALE_AUTHKEY}"
-  - name: sshd
-    command: |
-      sudo ssh-keygen -A && sudo /usr/sbin/sshd
-
-ports:
-  - port: 22
-    onOpen: ignore
-
+  - init: >
+      pip install ipykernel
+vscode:
+  extensions:
+    - ms-toolsai.jupyter
+    - ms-python.python
