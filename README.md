@@ -8,7 +8,7 @@ Note: When starting, use the recommended Python3 version (indicated by a star).
 
 
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gbraad/gitpod-fedora-notebooks)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gbraad-devenv/gitpod-fedora-notebooks)
 
 
 Authors
